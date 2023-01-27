@@ -20,11 +20,10 @@ int main(int argc, char* argv[]) {
     }
   }
   N = j;
-  if (N == 0) printf("No prime");
+  if (N == 0) printf("no prime");
   else{
     display(prime,N);
     bubbleSort(prime,N); 
-    printf("\n");
     display(prime,N);
   }
   // display(a,N);
