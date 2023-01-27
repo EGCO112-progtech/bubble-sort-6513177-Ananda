@@ -1,4 +1,6 @@
 // selection sort function module in C
+#include <math.h>
+
 
 void swap(int *a,int *b);
 
@@ -74,6 +76,14 @@ void bubbleSort(int a[],int n){
   }
 }
 
-
+int Isprime(int x) 
+{
+  if (x == 1 || x == 0) return 0;
+  for(int i = 2; i < x; i++)
+  {
+    if (x % i == 0) return 0;
+  }
+  return 1;
+}
 
 
