@@ -36,14 +36,19 @@ void swap(int *a,int *b){
 
 void bubbleSort(int a[],int n){
 
-int i,j;
-int sorted;
-// how may pair to compare?
-for(j=1;j<=n-1;j++){
- 
-  display(a,n);
- }
-  
+  int sorted;
+  // how may pair to compare?
+  for(int i = 0; i < n-1; i++)
+  {
+    for (int j = 0; j < n-i-1; j++)
+    {
+      if (a[j] > a[j + 1])
+      {
+        swap(&a[j], &a[j+1]);
+      }
+    }
+    display(a, n);
+  }
 }
 
 
