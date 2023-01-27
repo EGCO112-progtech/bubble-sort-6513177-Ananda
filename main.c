@@ -4,8 +4,6 @@
 #include "sorting.h"
 
 int main(int argc, char* argv[]) {
-  // int a[N]={3,2,6,7,3,1};
-  // int a[argc - 1] = argv
   int i,j = 0,new_number, N, *a;
 
   N = argc - 1;
