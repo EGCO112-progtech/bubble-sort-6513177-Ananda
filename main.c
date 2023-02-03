@@ -17,19 +17,23 @@ int main(int argc, char* argv[]) {
       j++;
     }
   }
-  N = j;
-  if (N == 0) printf("No prime\n");
-  else{
-    display(prime,N);
-    bubbleSort(prime,N); 
-    display(prime,N);
-  }
+  // N = j;
+  // if (N == 0) printf("No prime\n");
+  // else{
+  //   display(prime,N);
+  //   bubbleSort(prime,N); 
+  //   display(prime,N);
+  // }
+
+  display(a,N);
+  // bubbleSort(a,N); 
+  // selectionSort(a,N);
+  insertion(a,N);
+  display(a,N);
   // display(a,N);
   // bubbleSort(a,N); 
 
-  // insertion(a,N);
 
-  // selectionSort(a,N);
 
  return 0;
 }

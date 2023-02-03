@@ -16,22 +16,45 @@ void display(int a[],int n){
 
 void selectionSort(int data[], int length) 
 { 
-	int i, j, m, mi; 
+	int i, j, mi; 
 	for (i = 0; i < length - 1; i++)
   {
     mi = i;
     for (j = i + 1; j < length; j++)
     {
       if (data[j] < data[mi]) mi = j;
-      
-      if (mi != i) swap(&data[i], &data[mi]);
-
     }
+    if (mi != i) swap(&data[mi], &data[i]);
   display(data,length);
   }
-	
 } 
 
+// // teacher's code
+
+// void selectionSort(int a[], int n) 
+// { 
+// 	int i;
+
+//   // int m = a[0];
+//   int mi = 0;
+// 	for (i = 0; i < n - 1; i++)
+//   {
+//     int m = a[i];
+//     mi = i;
+//     for (int j = i + 1; i < n; i++)
+//     {
+//       if (a[mi] > a[i])
+//       {
+//         m = a[i];
+//         mi = i;
+//       }
+//     }
+//     swap(&a[i], &a[mi]);
+
+//   display(a,n);
+//   }
+	
+// } 
 
 
 void insertion(int a[],int n){
@@ -41,7 +64,7 @@ void insertion(int a[],int n){
     while (j > 0 && a[j-1] > a[j])
     {
       swap(&a[j-1], &a[j]);
-      j -= 1;
+      j--;
     }
     display(a, n);
   }
